@@ -1,16 +1,85 @@
 :root {
-    --background:	#FFF8ED;
-    --foreground:	#546E7A;
+    --background:#f78c6c;
+    --foreground:#546E7A;
     --comment:	#888477;
-    --accent:	#c3e88d;
+    --accent:	#fff8ed;
     --redish:	#ff5370;
     --orangish:	#f78c6c;
-    --yellowish:	#ffcb6b;
+    --yellowish:#ffcb6b;
     --greenish:	#c3e88d;
     --bluish:	#82aaff;
     --purplish:	#c792ea;
 }
 
 body{
+    background-color: var(--background);
+    color: var(--accent);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     font-family: 'Caveat', cursive;
+}
+
+.title{
+    margin: 0.5em;
+    font-size: 4em;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+    color: var(--yellowish);
+}
+
+.newGroceryForm{
+    display: flex;
+}
+
+#newGrocery{
+    background-color: var(--accent);
+    color: var(--comment);
+    padding: 0.5em;
+    width: 20em;
+    font-size: 1.5em;
+    border-radius: 0.25em 0 0 0.25em;
+}
+
+#addBtn {
+    background-color: var(--yellowish);
+    color: var(--accent);
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-weight: bolder;
+    cursor: pointer;
+    border-radius: 0 0.25em 0.25em 0;
+}
+
+#addBtn:hover {
+    background-color: var(--redish);
+}
+
+#groceryList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    border-radius: 0.5em;
+    background-color: var(--redish);
+}
+
+.groceryItem {
+    background-color: var(--accent);
+    color: var(--comment);
+    font-weight: bold;
+    margin: 0.5em;
+    width: 24em;
+    padding: 0.5em;
+    border-radius: 0.25em;
+    text-align: center;
+}
+
+.groceryItem:hover {
+    background-color: var(--yellowish);
+    color: var(--accent);
+    font-weight: bold;
+
 }
